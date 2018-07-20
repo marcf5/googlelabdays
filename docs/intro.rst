@@ -28,21 +28,28 @@ Lab Components
 
 .. TODO:: Complete lab components table
 
-The following table lists VLANS, IP Addresses and Credentials for all
-components:
+The following Google Cloud VPC Networks and subnets are already created and will be used when deploying F5 BIG-IPs.
 
 .. list-table::
-    :widths: 20 40 40
+    :widths: 20 40 40 40
     :header-rows: 1
     :stub-columns: 1
 
     * - **Component**
-      - **VLAN/IP Address(es)**
-      - **Credentials**
-    * - Sample Host
-      - - **Management:** 10.1.1.250
-        - **Internal:** 10.1.10.250
-        - **External:** 10.1.20.250
-      - ``admin``/``admin``
+      - **VPC network name**
+      - **Subnet name**
+      - **IP address range**  
+    * - External VPC Network
+      - - marc-bigip-ext
+      - - marc-subnet-ext
+      - - 10.10.1.0/24
+    * - Management VPC Network
+      - - marc-bigip-mgmt
+      - - marc-subnet-mgmt
+      - - 10.0.2.0/24  
+    * - Internal VPC Network
+      - - marc-bigip-int
+      - - marc-subnet-int
+      - - 10.0.3.0/24
 
 

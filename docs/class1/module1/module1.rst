@@ -1,5 +1,5 @@
-Module – Installing a BIG-IP Virtual Edition
-=============================================
+Module – Deploying a 3-NIC F5 BIG-IP in GCP
+===========================================
 
 .. TODO:: Needs module description
 
