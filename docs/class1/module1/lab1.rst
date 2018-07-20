@@ -1,12 +1,19 @@
-Lab – Download the |bip| |ve| Image
+Lab – Deploy a 3-NIC F5 BIG-IP
 -----------------------------------
 
 .. TODO:: Needs lab description
 
 This lab will teach you how to download the |bip| |ve| image to your system.
 
-Task – Open a Web Browser
+Task – Deploy a 3-NIC F5 BIG-IP
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+gcloud deployment-manager deployments create marc-multinic-deployment --config /Users/chisinevski/gce/multinic/f5-existing-stack-byol-3nic-bigip.yaml
+
+
+Task - Set the password for the admin user
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+admin@(localhost)(cfg-sync Standalone)(Active)(/Common)(tmos)# modify auth user admin password
 
 .. TODO:: Needs task description
 

@@ -1,5 +1,5 @@
-Lab – Install a |bip| |ve| image on a Hypervisor
-------------------------------------------------
+Lab – Apply a web application firewall security policy
+------------------------------------------------------
 
 .. TODO:: Needs lab description
 

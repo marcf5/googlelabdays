@@ -6,22 +6,11 @@ Getting Started
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-.. NOTE::
-	 All work for this lab will be performed exclusively from the Windows
-	 jumphost. No installation or interaction with your local system is
-	 required.
-
 Lab Topology
 ~~~~~~~~~~~~
 
 .. TODO:: Complete lab topology
 
-The following components have been included in your lab environment:
-
-- 2 x F5 BIG-IP VE (v12.1)
-- 1 x F5 iWorkflow VE (v2.1)
-- 1 x Linux LAMP Webserver (xubuntu 14.04)
-- 1 x Windows Jumphost
 
 Lab Components
 ^^^^^^^^^^^^^^
@@ -52,4 +41,4 @@ The following Google Cloud VPC Networks and subnets are already created and will
       - - marc-subnet-int
       - - 10.0.3.0/24
 
-
+In the next section, we'll use the Google Deployment Manager template at https://github.com/marcf5/googlelabdays/blob/develop/f5-existing-stack-byol-3nic-bigip.yaml to deploy a 3-NIC F5 BIG-IP on the VPC networks and subnets above.
