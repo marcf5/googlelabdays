@@ -1,0 +1,49 @@
+# Copyright 2018 F5 Networks All rights reserved.
+#
+# Version v1.3.0
+
+imports:
+- path: f5-existing-stack-byol-3nic-bigip.py
+resources:
+- name: bigip-3nic-setup
+  type: f5-existing-stack-byol-3nic-bigip.py
+  properties:
+   region: us-west1
+   ### Google Region to deploy BIG-IP, for example us-west1
+   availabilityZone1: us-west1-a
+   ### Google Zone in specified region to deploy BIG-IP, for example us-west1-a
+   mgmtNetwork: marc-bigip-mgmt
+   ### Specify network to use for management traffic
+   mgmtSubnet: marc-subnet-mgmt
+   ### Specify subnet to use for management traffic
+   network1: marc-bigip-ext
+   ### Specify Network name to for BIG-IP external application traffic
+   subnet1: marc-subnet-ext
+   ### Subnet of Network BIG-IP should use for externalapplication traffic
+   mask1: '24'
+   ### Mask used for specified external application traffic subnet using prefix notation. ie '24'
+   network2: marc-bigip-int
+   ### Specify Network name to for BIG-IP internal application traffic
+   subnet2: marc-subnet-int
+   ### Subnet of Network BIG-IP should use for internal application traffic
+   mask2: '24'
+   ### Mask used for specified internal application subnet using prefix notation. ie '24'
+   licenseKey1: 'HKFSE-HSLNC-LROSM-XGKIS-NLFBKCY'
+   ### BIG-IP license key
+   imageName: f5-byol-bigip-13-1-0-2-0-6-best
+   ### BIG-IP image, valid choices include:
+   # f5-byol-bigip-13-1-0-2-0-6-best
+   # f5-byol-bigip-13-1-0-2-0-6-better
+   # f5-byol-bigip-13-1-0-2-0-6-good
+   instanceType: n1-standard-4
+   ### Instance type assigned to BIG-IP, example n1-standard-4.
+   manGuiPort: '443'
+   ### BIG-IP Management Port, the default is 443
+   serviceAccount: ''
+   ### If using service discovery, enter google service account to use for discovery. Leave single quotes with nothing between when not using service discovery.
+   tagName: '<tag>'
+   ### If using service discovery, enter tag name used on servers for discovery. Leave single quotes with nothing between if not using service discovery.
+   tagValue: ''
+   ### If using service discovery, enter tag value used on servers for discovery. Leave single quotes with nothing between if not using service discovery.
+   allowUsageAnalytics: 'yes'
+   ### This deployment can send anonymous statistics to F5 to help us determine how to improve our solutions. If you enter **no** statistics are not sent.
