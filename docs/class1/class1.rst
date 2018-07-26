@@ -5,10 +5,8 @@ Class - |classname|
 
 This class covers the following topics:
 
-- Downloading a |f5| |bip| |ve|
-- Installing a |bip| |ve| image on a hypervisor
-- Installing a |f5| |bip| Appliance
-- Powering on a |bip| Appliance
+- Deploying F5 BIG-IP in Google Cloud
+- Configuring F5 BIG-IP advanced security features in Google Cloud
 
 Expected time to complete: **3 hours**
 
