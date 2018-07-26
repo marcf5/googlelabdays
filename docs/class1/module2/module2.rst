@@ -1,10 +1,9 @@
-Module – Installing a BIG-IP Appliance
+Module – TBD
 ======================================
 
 .. TODO:: Needs module description
 
-In this module you will learn how to install a |f5| |bip| Appliance into your
-datacenter.
+TBD
 
 .. toctree::
    :maxdepth: 1
